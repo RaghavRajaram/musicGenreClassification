@@ -15,6 +15,8 @@ To get the genres of the songs in the dataset, download the metadata file from t
 take 10 songs from each genre and from each of these songs, take the portion from 10-15 and paste them together. 
 
 This will give us one audio clip for each genre. Plot spectrograms. 
+
+
 Blues
 
 ![Blues Spectogram](https://github.com/RaghavRajaram/musicGenreClassification/blob/master/Blues.PNG)
