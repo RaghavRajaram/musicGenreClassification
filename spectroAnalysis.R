@@ -36,7 +36,7 @@ metaData$file_name = trim(metaData$file_name)
 genreList = unique(metaData$Genre)
 freq <- 22050
 
-# For each genre, take first 10 files and for each file, extract the song portion from 20-25 seconds 
+# For each genre, take first 10 files and for each file, extract the song portion from 10-15 seconds 
 # paste all these excerpts and assign them to one file per genre 
 for (i in 1:length(genreList))
 {
@@ -50,12 +50,14 @@ for (i in 1:length(genreList))
   for (j in 1:length(fileNames))
   {
     song = readMP3(trim(as.character(fileNames[j])))
-    song = cutw(song,from=20, to=25, output="Wave") 
+    song = cutw(song,from=10, to=15, output="Wave") 
     dummySong = pastew(dummySong,song,f = freq)
   }
   assign(genreList[i],dummySong)
 }
 
+
+plot(c(1,2,3),c(1,2,3))
 
 # Plot spectrogram for Blues genre 
 spectrogram(Wave(Blues)@left,1024)
