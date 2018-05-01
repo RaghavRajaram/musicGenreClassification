@@ -3,7 +3,9 @@ Genre Classification of DEAM - The MediaEval Database for Emotional Analysis of 
 
 ## Data
 The data can be downloaded from [DEAM](http://cvml.unige.ch/databases/DEAM/)
+
 Data size: 1.3 Gb
+
 ## Exploratory Analysis 
 
 Check if songs belonging to different genres have different spectrograms that can be used to classify songs. 
@@ -15,12 +17,15 @@ take 10 songs from each genre and from each of these songs, take the portion fro
 This will give us one audio clip for each genre. Plot spectrograms. 
 
 Blues
+
 ![Blues Spectogram](https://github.com/RaghavRajaram/musicGenreClassification/blob/master/Blues.PNG)
 
 Classical
+
 ![Classical Spectogram](https://github.com/RaghavRajaram/musicGenreClassification/blob/master/Classical.PNG)
 
 Rock
+
 ![Rock Spectogram](https://github.com/RaghavRajaram/musicGenreClassification/blob/master/Rock.PNG)
 
 # Credits
